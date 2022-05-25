@@ -1,0 +1,13 @@
+body {
+  padding: 50px 80px;
+  font: 14px "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+.current-user {
+  font-size: 1.2em;
+  color: red;
+}
+
+.cookies {
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<% if (currentUser) { %>
+  <div class="current-user">Hello, <%= currentUser.name %></div>
+  <br/>
+  <form action="/logout" method="get">
+    <input type="submit" value="Logout">
+  </form>
+<% } %>
+<body>

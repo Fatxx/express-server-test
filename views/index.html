@@ -1,0 +1,35 @@
+<%- include('header.html') -%>
+
+<h1>Metamask Cookies Test</h1>
+
+<h3>Login</h3>
+<div id="login">
+  <form action="/login" method="post">
+    <input required type="email" name="username" placeholder="Email">
+    <input required type="password" name="password" placeholder="Password">
+    <input type="submit" value="Login">
+  </form>
+  <br />
+  <a href="/auth/facebook" role="button">Login with Facebook (iOS only)</a>
+</div>
+
+<h3>Register</h3>
+<div id="register">
+  <form action="/register" method="post">
+    <input required type="text" name="name" placeholder="Name">
+    <input required type="email" name="email" placeholder="Email">
+    <input required type="password" name="password" placeholder="Password">
+    <input type="submit" value="Register">
+  </form>
+</div>
+
+<h4>Current cookies</h4>
+<p id="cookies"></p>
+
+<script>
+  document.getElementById('cookies').innerHTML = document.cookie;
+</script>
+
+
+
+<%- include('footer.html') -%>

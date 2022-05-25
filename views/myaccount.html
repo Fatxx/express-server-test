@@ -1,0 +1,14 @@
+<%- include('header.html') -%>
+
+<div id="cookies">
+  <h1>Cookies</h1>
+  <p><%= cookies %></p>
+  <h1>Signed Cookies</h1>
+  <p><%= signedCookies %></p>
+</div>
+
+<%- include('footer.html') -%>
+
+<script>
+  document.cookie = 'cookieInBrowser=I was set in the browser';
+</script>
